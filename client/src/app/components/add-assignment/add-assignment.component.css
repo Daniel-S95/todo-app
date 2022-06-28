@@ -1,0 +1,72 @@
+.container {
+  padding: 15px 15px 50px 15px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.assignment-form {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 25px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: hsl(144, 100%, 98%);
+  border: 2px solid hsl(144, 100%, 85%);
+}
+
+.form-label {
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+textarea {
+  height: 80px;
+}
+
+.textarea-width {
+  width: 400px;
+  max-width: 90%;
+}
+
+hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.add-assignment-button {
+  margin: 10px 0px;
+  font-size: 1rem;
+  width: 90%;
+  max-width: 200px;
+  height: 45px;
+}
+
+.customer-option {
+  width: 90%;
+  max-width: 250px;
+}
+
+@media (min-width:320px) {
+  .form-label {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width:481px) {
+  .form-label {
+    font-size: 1.1rem;
+  }
+}

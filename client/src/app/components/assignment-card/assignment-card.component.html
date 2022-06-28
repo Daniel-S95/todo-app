@@ -1,0 +1,20 @@
+<div [ngClass]="assignment.isDone ? 'assignment-item assignment-done' : 'assignment-item'">
+  <span class="assignment-info">
+    <label class="assignment-to"><label class="customer-name">{{assignment.customerName}}</label> was assigned
+      to:</label>
+    <hr />
+    <label class="assignment-description">{{assignment.description}}</label>
+    <hr />
+    <label class="creation-date-label">Created on {{assignment.creationDate | date:'dd/MM/yyyy'}}</label>
+
+    <span class="icons-container">
+      <mat-icon *ngIf="assignment.isDone" class="icon icon-remove-done" title="Mark as incomplete"
+        (click)="updateAssignmentStatus()">remove_done
+      </mat-icon>
+      <mat-icon *ngIf="!assignment.isDone" class="icon icon-done" title="Mark as complete"
+        (click)="updateAssignmentStatus()">done</mat-icon>
+
+      <mat-icon class="icon remove-icon" (click)="deleteAssignment()">delete</mat-icon>
+    </span>
+  </span>
+</div>

@@ -1,0 +1,13 @@
+<div class="header-container">
+  <span class="header-item" (click)="navigateToAllAssignments()"
+    [ngClass]="selectedTab === 'Assignments' ? 'selected' : ''">
+    <mat-icon>assignment</mat-icon>
+    <span>Assignments</span>
+  </span>
+
+  <span class="header-item" (click)="navigateToAddAssignment()"
+    [ngClass]="selectedTab === 'Add Assignment' ? 'selected' : ''">
+    <mat-icon>add</mat-icon>
+    <span>Add Assignment</span>
+  </span>
+</div>

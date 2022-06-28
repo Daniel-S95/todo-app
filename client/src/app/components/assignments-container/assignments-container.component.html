@@ -1,0 +1,5 @@
+<div class="assignments-container">
+  <app-assignment-card *ngFor="let assignment of allAssignments" [assignment]="assignment"
+    (deleteAssignmentId)="deleteAssignment($event)" (updateAssignmentStatusId)="updateAssignmentStatus($event)">
+  </app-assignment-card>
+</div>

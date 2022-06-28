@@ -1,0 +1,100 @@
+.assignment-item {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  border-radius: 5px;
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
+  border: 1px solid hsl(132, 100%, 85%);
+  background-color: hsl(132, 100%, 95%);
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.assignment-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.assignment-done {
+  border: 1px solid hsl(0, 100%, 85%);
+  background-color: hsl(0, 100%, 95%);
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+label {
+  margin: 5px 0px;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.creation-date-label {
+  font-size: 0.8rem;
+  color: rgb(71, 71, 71);
+}
+
+.assignment-description {
+  margin: 20px 0px;
+  padding: 0px 10px;
+  font-style: italic;
+  overflow: auto;
+  max-height: 80px;
+}
+
+.assignment-to {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+.remove-icon {
+  color: red;
+}
+
+.icon-remove-done {
+  color: red;
+}
+
+.icon-done {
+  color: green;
+}
+
+@media (min-width:320px) {
+  .assignment-item {
+    padding: 15px;
+  }
+}
+
+@media (min-width:481px) {
+  .assignment-item {
+    padding: 20px 30px;
+  }
+}

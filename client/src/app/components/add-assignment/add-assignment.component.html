@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Add new assignment:</h1>
+
+  <form class="assignment-form">
+    <label class="form-label">Please enter a description regarding the assignment:</label>
+    <mat-form-field class="textarea-width" appearance="fill">
+      <mat-label>Description</mat-label>
+
+      <textarea matInput required [formControl]="descriptionFormControl"
+        placeholder="Enter the description of the assignment" maxlength="500"></textarea>
+
+      <mat-error *ngIf="descriptionFormControl.hasError('required')">
+        Description is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <hr />
+
+    <label class="form-label">Who should be assigned to do it?</label>
+    <mat-form-field class="customer-option" appearance="fill">
+      <mat-label>Customer</mat-label>
+      <mat-select [(ngModel)]="selectedCustomer" name="food">
+        <mat-option *ngFor="let customer of allCustomers" [value]="customer">
+          {{customer.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- <button mat-raised-button color="primary" class="add-assignment-button" (click)="addNewAssignment()"
+      [disabled]="descriptionFormControl.hasError('required') || !selectedCustomer">Add Assignment!</button> -->
+
+    <button mat-raised-button color="primary" class="add-assignment-button" (click)="addNewAssignment()">Add
+      Assignment!</button>
+
+  </form>
+</div>
